@@ -31,7 +31,7 @@ a = st.number_input(' 공부시간 입력 ', value=0)   # 사용자 입력
 
 if st.button('합불분류'):              # 사용자가 '합불분류' 버튼을 누르면
         input_data = [[ a ]]          # 사용자가 입력한 a,b,c 를 input_data에 저장하고
-        p = predict.(input_data)      # model이 분류한 값을 p에 저장한다
+        p = model.predict(input_data)      # model이 분류한 값을 p에 저장한다
         if p[0] == 1 :
               st.success('인공지능 분류 결과는 합격입니다')
         else:
